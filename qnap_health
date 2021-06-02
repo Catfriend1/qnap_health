@@ -356,7 +356,7 @@ elif [ "$strPart" == "diskused" ]; then
 
   if [ $perc -ge $strCritical ]; then
     echo "CRITICAL: $OUTPUT"
-    exit $EXIT_CRITICAL
+    exit $EXIT_CRITICAL 
   elif [ $perc -ge $strWarning ]; then
     echo "WARNING: $OUTPUT"
     exit $EXIT_WARNING
